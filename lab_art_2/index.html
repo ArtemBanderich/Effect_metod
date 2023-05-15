@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Лабораторна №2</title>
+	</head>
+	<body>
+		<h1>Оформлення замовлення</h1>
+		<form>
+			<label for="delivery-date">Дата доставки:</label>
+			<input type="date" id="delivery-date" required>
+			<br>
+			<label for="delivery-time">Час доставки:</label>
+			<select id="delivery-time" required>
+				<!-- Опції для вибору проміжку часу будуть додаватися динамічно через JavaScript -->
+			</select>
+			<br>
+			<label for="recipient-checkbox">Отримувач інша особа:</label>
+			<input type="checkbox" id="recipient-checkbox">
+			<br>
+			<div id="recipient-details" style="display: none;">
+				<label for="recipient-name">Ім'я отримувача:</label>
+				<input type="text" id="recipient-name">
+				<label for="recipient-phone">Телефон отримувача:</label>
+				<input type="text" id="recipient-phone">
+			</div>
+			<br>
+			<label for="self-pickup-checkbox">Самовивіз з магазину:</label>
+			<input type="checkbox" id="self-pickup-checkbox">
+			<br>
+			<button type="submit">Оформити замовлення</button>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
